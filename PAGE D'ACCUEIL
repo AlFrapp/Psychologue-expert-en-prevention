@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Psychologue & Animateur de sensibilisation à la sécurité routière</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafd;
+      color: #333;
+    }
+    header {
+      background-color: #2a7de1;
+      color: white;
+      padding: 20px 10%;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 5px 0 15px 0;
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+    header a.button {
+      background-color: #ffb400;
+      color: #333;
+      padding: 10px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 15px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #2a7de1;
+      border-bottom: 3px solid #2a7de1;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+    ul li::before {
+      content: "✓";
+      color: #2a7de1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #2a7de1;
+      color: white;
+      text-align: center;
+      padding: 20px 10%;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    @media (max-width: 600px) {
+      header, footer {
+        padding: 20px 5%;
+      }
+      main {
+        margin: 20px 5%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Psychologue & Animateur de stages de sensibilisation à la sécurité routière</h1>
+  <p>Allier psychologie et prévention pour une conduite plus sûre et responsable</p>
+  <a href="#contact" class="button">Contactez-moi</a>
+</header>
+
+<main>
+  <section>
+    <p>Bienvenue sur mon site !<br />
+      Je suis <strong>[Alexis FRAPPIER]</strong>, psychologue spécialisé dans la prévention des comportements à risque au volant, et animateur agréé de stages de sensibilisation à la sécurité routière.</p>
+    <p>Grâce à une approche centrée sur la compréhension des mécanismes psychologiques qui influencent la conduite, j’accompagne les conducteurs dans la récupération de points de permis et dans l’adoption d’une conduite plus sûre et responsable.</p>
+  </section>
+
+  <section>
+    <h2>Pourquoi choisir une approche psychologique ?</h2>
+    <ul>
+      <li>Comprendre les facteurs émotionnels et cognitifs qui impactent la prise de risque au volant.</li>
+      <li>Favoriser un véritable changement de comportement par des techniques d’animation interactives et bienveillantes.</li>
+      <li>Offrir un espace d’écoute et d’échange pour une meilleure prise de conscience.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Mes interventions</h2>
+    <ul>
+      <li>Stages de sensibilisation à la sécurité routière agréés par la préfecture.</li>
+      <li>Sessions adaptées aux particuliers, entreprises, collectivités et associations.</li>
+      <li>Animations basées sur des méthodes pédagogiques innovantes alliant théorie et pratique.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <p>Pour en savoir plus ou organiser un stage, n’hésitez pas à me contacter :</p>
+    <p><strong>Email :</strong> <a href="mailto:frappieralexis@.com">frappieralexis@gmail.com</a></p>
+    <p><strong>Téléphone :</strong> <a href="tel:+33123456789">01 23 45 67 89</a></p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 [Alexis FRAPPIER] – Animateur psychologue en sécurité routière
+</footer>
+
+</body>
+</html>
