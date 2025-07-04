@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos – Psychologue sécurité routière</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f7fa;
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    h1 {
+      color: #205295;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #205295;
+      text-decoration: none;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 40px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>À propos de moi</h1>
+
+  <div class="content">
+    <p>Je suis [Ton nom], psychologue spécialisé dans la prévention des comportements à risque au volant. Mon approche allie écoute, pédagogie, et compréhension des mécanismes psychologiques liés à la conduite.</p>
+
+    <p>J’interviens dans le cadre de stages de sensibilisation à la sécurité routière agréés, en entreprise, ou pour des publics spécifiques. Mon objectif : favoriser une prise de conscience profonde et durable.</p>
+
+    <p>En tant que professionnelle de la santé mentale, je crois fermement qu’un accompagnement empathique permet de changer durablement les comportements à risque.</p>
+
+    <div class="back-link">
+      <a href="index.html">← Retour à l'accueil</a>
+    </div>
+  </div>
+
+</body>
+</html>
