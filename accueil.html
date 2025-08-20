@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexis FRAPPIER - Psychologue du travail</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+html { scroll-behavior: smooth; }
+body { font-family: 'Roboto', sans-serif; margin:0; padding:0; line-height:1.6; color:#333; }
+a { text-decoration:none; }
+
+header { position:fixed; width:100%; top:0; left:0; background:#0D47A1; color:white; z-index:1000; }
+nav { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; padding:15px 20px; }
+nav .logo { font-weight:700; font-size:1.5em; }
+nav ul { list-style:none; display:flex; margin:0; padding:0; }
+nav ul li { margin-left:25px; }
+nav ul li a { color:white; font-weight:500; transition:0.3s; }
+nav ul li a:hover { color:#FF6F61; }
+header + section { padding-top:100px; }
+
+.hero { position: relative; background: linear-gradient(rgba(13,71,161,0.7), rgba(13,71,161,0.7)), url('https://source.unsplash.com/1600x900/?office,work') center/cover no-repeat; color:white; padding:140px 20px 100px 20px; text-align:center; overflow: hidden; }
+.hero h1 { font-size:2.8em; margin:0; animation: fadeInDown 1s ease-out forwards; opacity:0; }
+.hero p { font-size:1.3em; margin:15px 0 30px; animation: fadeInUp 1s ease-out 0.5s forwards; opacity:0; }
+.btn { display:inline-block; background:#FF6F61; padding:12px 25px; margin:5px; border-radius:8px; font-weight:700; transition:0.3s; color:white; opacity:0; animation: fadeIn 1s ease-out 1s forwards;}
+.btn:hover { background:#e65b50; }
+
+@keyframes fadeInDown { from {opacity:0; transform: translateY(-30px);} to {opacity:1; transform: translateY(0);} }
+@keyframes fadeInUp { from {opacity:0; transform: translateY(30px);} to {opacity:1; transform: translateY(0);} }
+@keyframes fadeIn { from {opacity:0;} to {opacity:1;} }
+@keyframes bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px);} }
+
+section { padding:70px 20px; max-width:1200px; margin:0 auto; }
+h2 { font-size:2.2em; margin-bottom:40px; text-align:center; color:#0D47A1; }
+.columns { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.column { flex:1; min-width:250px; background:#f9f9f9; padding:25px; border-radius:12px; text-align:center; transition:0.3s; }
+.column:hover { transform: translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+.column i { font-size:2em; margin-bottom:15px; color:#FF6F61; animation: bounce 2s infinite;}
+.column h3 { margin-top:0; color:#0D47A1; }
+
+#temoignages { text-align:center; position:relative; }
+.testimonial { display:none; background:#eee; padding:25px 30px; border-radius:10px; margin:0 auto 20px; max-width:700px; font-style:italic; border-left:6px solid #0D47A1; }
+.testimonial.active { display:block; }
+.testimonial-author { margin-top:10px; font-weight:700; color:#0D47A1; }
+
+footer { background:#0D47A1; color:white; text-align:center; padding:50px 20px; }
+input, textarea { width:100%; padding:12px; margin:8px 0 20px; border:1px solid #ccc; border-radius:8px; font-size:1em; }
+button { background:#FF6F61; color:white; padding:12px 25px; border:none; border-radius:8px; font-size:1em; cursor:pointer; font-weight:700; transition:0.3s; }
+button:hover { background:#e65b50; }
+
+@media(max-width:768px){ 
+  .columns { flex-direction:column; } 
+  nav ul { flex-direction:column; background:#0D47A1; position:absolute; top:60px; right:0; display:none; width:200px; padding:10px 0; border-radius:0 0 0 10px;}
+  nav ul li { margin:10px 0; text-align:center; }
+  nav ul.active { display:flex; }
+  .menu-toggle { display:block; cursor:pointer; font-size:1.5em; }
+  header + .hero { padding-top:120px; }
+}
+@media(min-width:769px){ .menu-toggle { display:none; } }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Alexis FRAPPIER</div>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pourquoi">Pourquoi moi</a></li>
+      <li><a href="#temoignages">Témoignages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Psychologue du travail & Animateur sécurité routière</h1>
+  <p>Prévenir les risques – Accompagner le changement – Améliorer la qualité de vie au travail</p>
+  <a href="#contact" class="btn"><i class="fas fa-calendar-alt"></i> Prendre rendez-vous</a>
+  <a href="#services" class="btn"><i class="fas fa-info-circle"></i> Découvrir mes services</a>
+</section>
+
+<section id="apropos">
+  <h2>À propos</h2>
+  <p>Je suis psychologue du travail et animateur agréé de stages de sensibilisation à la sécurité routière. Ma mission est d’accompagner entreprises, salariés et conducteurs afin de prévenir les risques, favoriser le changement durable des comportements et renforcer la responsabilisation. Mon approche combine expertise clinique et connaissance des environnements professionnels, pour proposer des solutions concrètes et adaptées à chaque situation.</p>
+</section>
+
+<section id="services">
+  <h2>Mes interventions</h2>
+  <div class="columns">
+    <div class="column">
+      <i class="fas fa-car-side"></i>
+      <h3>Sécurité routière</h3>
+      <p>Stages de sensibilisation et prévention des comportements à risque.</p>
+    </div>
+    <div class="column">
+      <i class="fas fa-briefcase-medical"></i>
+      <h3>Santé au travail</h3>
+      <p>Prévention des risques psychosociaux et amélioration du bien-être au travail.</p>
+    </div>
+    <div class="column">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <h3>Conseil & formation</h3>
+      <p>Accompagnement individuel et collectif, formations sur mesure.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pourquoi">
+  <h2>Pourquoi me choisir ?</h2>
+  <div class="columns">
+    <div class="column"><i class="fas fa-user-md"></i>Expertise clinique et expérience terrain</div>
+    <div class="column"><i class="fas fa-lightbulb"></i>Méthodes pédagogiques interactives</div>
+    <div class="column"><i class="fas fa-tools"></i>Solutions personnalisées et concrètes</div>
+    <div class="column"><i class="fas fa-shield-alt"></i>Agrément officiel pour la sécurité routière</div>
+  </div>
+</section>
+
+<section id="temoignages">
+  <h2>Témoignages</h2>
+  <div class="testimonial active">
+    "Les formations ont transformé notre approche de la sécurité au travail."
+    <div class="testimonial-author">– Entreprise X</div>
+  </div>
+  <div class="testimonial">
+    "Stages de sensibilisation très efficaces et impact durables."
+    <div class="testimonial-author">– Client Y</div>
+  </div>
+  <button onclick="prevTestimonial()" class="btn"><i class="fas fa-chevron-left"></i></button>
+  <button onclick="nextTestimonial()" class="btn"><i class="fas fa-chevron-right"></i></button>
+</section>
+
+<section id="contact">
+  <h2>Contactez-moi</h2>
+  <form>
+    <input type="text" name="nom" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+    <button type="submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
+  </form>
+  <p>Email : contact@votresite.com | Téléphone : 06 XX XX XX XX</p>
+</section>
+
+<footer>
+  &copy; 2025 Alexis FRAPPIER. Tous droits réservés.
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('nav ul');
+  toggle.addEventListener('click', () => { menu.classList.toggle('active'); });
+
+  const testimonials = document.querySelectorAll('.testimonial');
+  let currentIndex = 0;
+  function showTestimonial(index) {
+    testimonials.forEach(t => t.classList.remove('active'));
+    testimonials[index].classList.add('active');
+  }
+  function nextTestimonial() {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+  }
+  function prevTestimonial() {
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentIndex);
+  }
+  setInterval(nextTestimonial, 5000); // Auto-slide toutes les 5s
+</script>
+
+</body>
+</html>
